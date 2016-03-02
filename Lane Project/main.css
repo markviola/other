@@ -1,0 +1,24 @@
+* {
+	margin: 0px;
+	font-family: Arial, Garamond;
+	background-color:#757575;
+}
+
+.header {
+	width: 100%;
+	color: #CFD8DC;
+	text-align: center;
+	background-color:#CFD8DC;
+}
+
+.main {
+	text-align: center;
+	background-color:#757575;
+}
+
+.footer {
+	text-align: center;
+	color: white;
+	margin-top: 5px;
+	background-color:#CFD8DC;
+}

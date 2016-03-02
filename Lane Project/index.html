@@ -2,7 +2,7 @@
 <html>
 <header>
 	<meta charset="utf-8"/>
-	<title>Photo Editor</title>
+	<title>Image Editor</title>
 	<link rel="stylesheet" href="main.css"/>
 	<script src="assets/react-0.14.7/build/react.js"></script>
 	<script src="assets/react-0.14.7/build/react-dom.js"></script>
@@ -11,7 +11,7 @@
 
 <body>
 	<div class="header">
-		<h1>PHOTO EDITOR</h1>
+		<h1>IMAGE EDITOR</h1>
 	</div>
 
 	<div id="main" class="main"></div>
@@ -94,14 +94,6 @@
 
 		var MainComponent = React.createClass({
 
-			propTypes: {
-				name : React.PropTypes.string,
-				rotatePressed : React.PropTypes.bool,
-				translatePressed : React.PropTypes.bool,
-				opacityPressed : React.PropTypes.bool,
-				scalePressed : React.PropTypes.bool
-			},
-
 			_availRotateButton: function(){
 				console.log('rotate clicked');
 				rotate.style.visibility = "hidden";
@@ -163,17 +155,6 @@
 				console.log('clicked');
 			},
 
-
-			getDefaultProps: function(){
-				return {
-					name: 'Guy',
-					rotatePressed: false,
-					translatePressed: false,
-					opacityPressed: false,
-					scalePressed: false
-				}
-			},
-
 			render: function() {
 				var otherVar = this.props.name
 
@@ -210,7 +191,7 @@
 		});
 
 		ReactDOM.render(
-			<MainComponent name="Guy" />,
+			<MainComponent />,
 			document.getElementById('main')
 		);
 	</script>
